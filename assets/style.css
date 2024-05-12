@@ -9,7 +9,7 @@ body {
 }
 .mobile-frame {
 	width: 100%;
-	max-width: 500px;
+	max-width: 500px; /* Maksimum lebar mobile frame */
 	height: 100vh;
 	background-color: #ffffff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -40,9 +40,8 @@ body {
 .container {
 	flex-grow: 1;
 	overflow-y: auto;
-	padding: 10px;
+	padding-bottom: 60px; /* Padding 60 pada sisi kanan dan kiri */
 	background-color: #f8f9fa;
-	/* padding-bottom: 60px; */
 }
 .image-container {
 	text-align: center;
@@ -142,18 +141,13 @@ body {
 	color: #db4437; /* Google red */
 }
 .bottom-nav {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	background-color: #007bff;
 	padding: 10px 0;
-	z-index: 999; /* untuk memastikan bahwa bottom menu berada di atas konten lainnya */
+	flex-shrink: 0;
 }
-
 .bottom-nav a {
 	text-align: center;
 	font-size: 14px;
