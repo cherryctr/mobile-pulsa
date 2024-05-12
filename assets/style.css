@@ -153,9 +153,12 @@ body {
 	font-size: 14px;
 	color: #fff;
 	text-decoration: none;
-	display: flex;
+	/* display: flex; */
 	flex-direction: column;
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
+	/* align-items: center; */
 }
 .bottom-nav a i {
 	font-size: 18px;
