@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mobile App Layout</title>
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			rel="stylesheet"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="assets/style.css" />
+	</head>
+	<body>
+		<div class="mobile-frame">
+			<div class="search-bar mb-3">
+				<input
+					type="text"
+					class="form-control"
+					placeholder="Search for products"
+				/>
+				<div class="notification-icon">
+					<i class="fas fa-bell"></i>
+				</div>
+			</div>
+			<div class="container bg-white p-3">
+				<div class="image-container">
+					<img src="assets/icon/login.avif" alt="Login Illustration" />
+				</div>
+				<ul class="nav nav-tabs" id="authTabs" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a
+							class="nav-link active"
+							id="login-tab"
+							data-toggle="tab"
+							href="#login"
+							role="tab"
+							aria-controls="login"
+							aria-selected="true"
+							>Login</a
+						>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a
+							class="nav-link"
+							id="register-tab"
+							data-toggle="tab"
+							href="#register"
+							role="tab"
+							aria-controls="register"
+							aria-selected="false"
+							>Register</a
+						>
+					</li>
+				</ul>
+				<div class="tab-content" id="authTabsContent">
+					<div
+						class="tab-pane fade show active"
+						id="login"
+						role="tabpanel"
+						aria-labelledby="login-tab"
+					>
+						<form class="mt-4">
+							<div class="form-group">
+								<input
+									type="email"
+									class="form-control"
+									id="loginEmail"
+									placeholder="Email"
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="password"
+									class="form-control"
+									id="loginPassword"
+									placeholder="Password"
+								/>
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">
+								Login
+							</button>
+							<button type="button" class="btn btn-google btn-block">
+								<i class="fab fa-google"></i> Login with Google
+							</button>
+						</form>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="register"
+						role="tabpanel"
+						aria-labelledby="register-tab"
+					>
+						<form class="mt-4">
+							<div class="form-group">
+								<input
+									type="text"
+									class="form-control"
+									id="registerName"
+									placeholder="Name"
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="email"
+									class="form-control"
+									id="registerEmail"
+									placeholder="Email"
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="password"
+									class="form-control"
+									id="registerPassword"
+									placeholder="Password"
+								/>
+							</div>
+							<button type="submit" class="btn btn-success btn-block">
+								Register
+							</button>
+							<button type="button" class="btn btn-google btn-block">
+								<i class="fab fa-google"></i> Register with Google
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-nav">
+				<a href="grid.html"> <i class="fas fa-home"></i> Home </a>
+				<a href="kategori.html"> <i class="fas fa-list"></i> Kategori </a>
+				<a href="produk.html"> <i class="fas fa-utensils"></i> Produk </a>
+				<a href="#"> <i class="fas fa-user"></i> Akun </a>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js"
+			integrity="sha512-1M9vud0lqoXACA9QaA8IY8k1VR2dMJ2Qmqzt9pN2AH7eQHWpNsxBpaayV0kKkUsF7FLVQ2sA2SSc8w5VOm7/mg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+			integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</body>
+</html>

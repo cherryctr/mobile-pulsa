@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mobile App Layout</title>
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			rel="stylesheet"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="assets/style.css" />
+	</head>
+	<body>
+		<div class="mobile-frame">
+			<div class="search-bar">
+				<input type="text" placeholder="Search for products" />
+				<div class="notification-icon">
+					<i class="fas fa-bell"></i>
+				</div>
+			</div>
+			<div class="container">
+				<ul class="nav nav-tabs" id="productTabs" role="tablist">
+					<li class="nav-item">
+						<a
+							class="nav-link active"
+							id="pulsa-tab"
+							data-toggle="tab"
+							href="#pulsa"
+							role="tab"
+							aria-controls="pulsa"
+							aria-selected="true"
+							>Pulsa</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							id="internet-tab"
+							data-toggle="tab"
+							href="#internet"
+							role="tab"
+							aria-controls="internet"
+							aria-selected="false"
+							>Paket Internet</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							id="token-tab"
+							data-toggle="tab"
+							href="#token"
+							role="tab"
+							aria-controls="token"
+							aria-selected="false"
+							>Token Listrik</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							id="game-tab"
+							data-toggle="tab"
+							href="#game"
+							role="tab"
+							aria-controls="game"
+							aria-selected="false"
+							>Top Up Game</a
+						>
+					</li>
+				</ul>
+				<div class="tab-content" id="productTabsContent">
+					<div
+						class="tab-pane fade show active"
+						id="pulsa"
+						role="tabpanel"
+						aria-labelledby="pulsa-tab"
+					>
+						<div class="row mt-3">
+							<div class="col-6">
+								<div class="product-card">
+									<div class="product-title">5000</div>
+									<div class="product-price">Rp.5.500,00</div>
+								</div>
+							</div>
+
+							<div class="col-6">
+								<div class="product-card">
+									<div class="product-title">5000</div>
+									<div class="product-price">Rp.5.500,00</div>
+								</div>
+							</div>
+							<!-- Repeat for more products as needed -->
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="internet"
+						role="tabpanel"
+						aria-labelledby="internet-tab"
+					>
+						<div class="row mt-3">
+							<div class="col-6">
+								<div class="product-card">
+									<div class="product-title">10 GB</div>
+									<div class="product-price">Rp.50.000,00</div>
+								</div>
+							</div>
+
+							<div class="col-6">
+								<div class="product-card">
+									<div class="product-title">10 GB</div>
+									<div class="product-price">Rp.50.000,00</div>
+								</div>
+							</div>
+							<!-- Repeat for more products as needed -->
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="token"
+						role="tabpanel"
+						aria-labelledby="token-tab"
+					>
+						<div class="row mt-3">
+							<div class="col-6">
+								<div class="product-card">
+									<div class="product-title">20 kWh</div>
+									<div class="product-price">Rp.30.000,00</div>
+								</div>
+							</div>
+							<!-- Repeat for more products as needed -->
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="game"
+						role="tabpanel"
+						aria-labelledby="game-tab"
+					>
+						<div class="row mt-3">
+							<div class="col-6">
+								<div class="product-card">
+									<div class="product-title">Diamonds 100</div>
+									<div class="product-price">Rp.15.000,00</div>
+								</div>
+							</div>
+							<!-- Repeat for more products as needed -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-nav">
+				<a href="grid.html">
+					<i class="fas fa-home"></i>
+					Home
+				</a>
+				<a href="kategori.html">
+					<i class="fas fa-list"></i>
+					Kategori
+				</a>
+				<a href="produk.html">
+					<i class="fas fa-utensils"></i>
+					Produk
+				</a>
+				<a href="login.html">
+					<i class="fas fa-user"></i>
+					Akun
+				</a>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js"
+			integrity="sha512-1M9vud0lqoXACA9QaA8IY8k1VR2dMJ2Qmqzt9pN2AH7eQHWpNsxBpaayV0kKkUsF7FLVQ2sA2SSc8w5VOm7/mg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+			integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</body>
+</html>
