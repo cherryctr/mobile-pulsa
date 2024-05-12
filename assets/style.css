@@ -141,13 +141,18 @@ body {
 	color: #db4437; /* Google red */
 }
 .bottom-nav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	background-color: #007bff;
 	padding: 10px 0;
-	flex-shrink: 0;
+	z-index: 999; /* untuk memastikan bahwa bottom menu berada di atas konten lainnya */
 }
+
 .bottom-nav a {
 	text-align: center;
 	font-size: 14px;
